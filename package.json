@@ -1,0 +1,25 @@
+{
+  "name": "embassy-alert",
+  "version": "1.0.0",
+  "description": "Node.js API that fetches a webpage every 5 minutes and checks for changes",
+  "main": "index.js",
+  "scripts": {
+    "start": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/imasimali/Embassy-Appoint-Alert.git"
+  },
+  "author": "Asim Ali <hi@asimali>",
+  "license": "Apache-2.0",
+  "bugs": {
+    "url": "https://github.com/imasimali/Embassy-Appoint-Alert/issues"
+  },
+  "homepage": "https://github.com/imasimali/Embassy-Appoint-Alert#readme",
+  "dependencies": {
+    "axios": "^1.7.2",
+    "cron": "^3.1.7",
+    "dotenv": "^16.4.5",
+    "express": "^4.19.2"
+  }
+}
