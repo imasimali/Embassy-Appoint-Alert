@@ -79,13 +79,13 @@ async function checkForChanges() {
     return;
   }
 
-  // if (currentContent !== initialContent) {
-  //   console.log('Page content has changed.');
-  await sendEmailNotification('The content of the monitored webpage has changed.');
-  await sendWhatsAppMessage('The content of the monitored webpage has changed.');
-  // } else {
-  //   console.log('No changes detected.');
-  // }
+  if (currentContent !== initialContent) {
+    console.log('Page content has changed.');
+    await sendEmailNotification('The content of the monitored webpage has changed.');
+    await sendWhatsAppMessage('The content of the monitored webpage has changed.');
+  } else {
+    console.log('No changes detected.');
+  }
 }
 
 const job = new cron.CronJob('*/5 * * * *', checkForChanges, null, true, 'Asia/Karachi');
